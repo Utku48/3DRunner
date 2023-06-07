@@ -1,0 +1,50 @@
+Git Komutları: 
+ls-> Girdğimiz klasör içindeki klasörleri gösterir
+pwd-> içinde oldugumuz klasörü gösterir.
+cd klasör adı -> adını yazdıgımız klasörün içine gireriz
+cd .. -> Bir önceki klasöre geri dönmek
+mkdir klasör adı -> Klasör oluşturur
+touch notAdı.txt -> Not oluşturur
+rm dosyaAdı -> Dosyayı siler
+rm -rf KlasörAdı -> Klasörü siler
+
+
+git status -> Git'in güncel durumunu göster.
+
+git init -> git init komutu, mevcut bir dizinde yeni bir Git deposu oluşturmanızı sağlar.  .git dosyası oluşturur.
+
+git log -> git log komutu, Git deposundaki commit geçmişini görüntülemek için kullanılır. Bu komut, önceki commitleri, kimin yaptığını, ne zaman yapıldığını, hangi değişikliklerin yapıldığını ve commit mesajını içeren bir liste şeklinde çıktı verir
+
+gitignore dosyası-> Git deposunda takip edilmemesi gereken dosya ve klasörleri belirlemek için kullanılan bir dosyadır.
+ gitignore adımları -> 
+  1-GitBash'e "touch .gitignore" dosyasını oluştur
+   2-Oluşan gitignore dosyasının içine gizlenecek olan dosyayı uzantısı ile yaz.  Mesela "secret.txt" dosyası
+
+git branch-> Git deposunda mevcut dalları listelemeyi sağlayan bir komuttur.
+git branch feature -> feature adında dal(branch) oluşturur.
+
+git switch BranchAdı -> Yazılan BranchAdı dalına(branch'ine) geçiş yaparız
+
+git merge->Git deposundaki farklı dalları birleştirmek için kullanılan bir komuttur.
+Mesela:
+1-"branch1" ve "branch2" diye 2 tane dalımız olsun. 
+2-"branch1" dalındaysanız ve "branch2" dalını "branch1" dalına eklemek istersek  
+'git merge branch2' komutunu kullanırız
+
+git stash-> geçici olarak çalışma dizininizdeki değişiklikleri saklamak ve sonra geri getirmek için kullanılır.
+
+git stash pop-> en son saklanan stash'i geri alır ve uygular. Bu komut, stash'inizi geri alırken aynı zamanda stash'i stash listesinden de kaldırır.
+
+git stash list-> mevcut stash listesini görüntülemek için kullanılır.Bu komut, çalışma dizininde saklanmış olan stash'lerin listesini gösterir.
+
+git checkout-> Git deposunda farklı dallar arasında geçiş yapmak, belirli bir commit'e veya bir dosyanın önceki durumuna geri dönmek için kullanılır.
+
+git reset --hard <commit hash> -> girilen commit hash'in commite geri döner. O commit'ten sonraki commitleri siler
+
+git revert-> geri almak istediğiniz commiti belirtirsiniz ve Git, o committe yapılan değişiklikleri geri alır. Geri alma işlemi, commitin içeriğini tamamen ortadan kaldırmaz; bunun yerine, değişiklikleri tersine çevirir ve yeni bir commit oluşturur. 
+
+git diff-> Git deposundaki dosyalardaki değişiklikleri görüntülemek için kullanılan bir Git komutudur. Bu komut, iki farklı commit arasındaki farkları veya çalışma dizininizdeki dosyalarla son yapılmış commit arasındaki farkları gösterebilir.
+
+!git fetch -> Local repo'ya değişiklikleri getirir ama dosyaları değiştirmez. Dosyaları incelemene imkan sağlar.
+!git pull->   Direkt olarak hem kendi dosyaalrını değiştirir hem local repo'ya alır hem merge yapar
+
