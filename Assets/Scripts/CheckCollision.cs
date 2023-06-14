@@ -13,7 +13,7 @@ public class CheckCollision : MonoBehaviour
         {
             //Debug.Log("CoinCollected");
             AddCoin();
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 
